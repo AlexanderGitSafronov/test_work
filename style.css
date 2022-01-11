@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: TimesNewRomanPSMT;
+  color: #000;
+  font-size: 15px;
+  width: 100%;
+}
+header {
+  padding: 30px 60px;
+}
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.section.half {
+  flex-basis: 100%;
+}
+.position {
+  display: flex;
+}
+.first_block {
+  padding: 10px 50px 1px 50px;
+  border-top: 1px solid #979797;
+  border-left: 1px solid #979797;
+}
+.second_block {
+  background-color: #979797;
+  width: 35px;
+  height: 1px;
+  transform: rotate(55deg);
+  margin-top: 14px;
+  margin-left: -8px;
+}
+.third_block {
+  flex: 1;
+
+  border-bottom: 1px solid #979797;
+  margin-left: -8px;
+}
+.discription {
+  color: #acacac;
+}
+.second_discription {
+  margin-left: 120px;
+}
+.section_indent {
+  padding: 50px 20px 20px 50px;
+}
+.close {
+  position: absolute;
+  right: 12px;
+  top: 30px;
+  width: 32px;
+  height: 32px;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.combined_copy {
+  padding: 14px 60px 0px 54px;
+  border-bottom: solid 1px #979797;
+  border-left: solid 1px #979797;
+  border-right: solid 1px #979797;
+}
+
+.section_header {
+  font-weight: bold;
+  padding: 10px 50px 1px 50px;
+  text-align: center;
+  border-top: solid 1px #979797;
+  border-left: solid 1px #979797;
+}
+.position_for_everyone {
+  position: relative;
+}
+
+.section_center {
+  margin: 40px 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.section_center p {
+  padding: 5px 0px;
+}
+
+.center_hr {
+  margin-top: 20px;
+}
+.center_hr div {
+  margin-bottom: 32px;
+  background-color: #d8d8d8;
+  height: 10px;
+}
+.center_hr1 {
+  width: 260px;
+}
+.center_hr2 {
+  width: 300px;
+}
+.center_hr3 {
+  width: 220px;
+}
+.center_hr4 {
+  width: 240px;
+}
+.center_hr5 {
+  width: 210px;
+}
+.center_hr6 {
+  width: 260px;
+}
+
+.center_first1 p {
+  font-weight: bold;
+  text-align: end;
+}
+.right_position {
+  margin-left: auto;
+}
+.right_hr .center_hr1 {
+  width: 160px;
+}
+.right_hr .center_hr2 {
+  width: 180px;
+}
+.right_hr .center_hr3 {
+  width: 150px;
+}
+.right_hr .center_hr4 {
+  width: 120px;
+}
+.right_hr .center_hr5 {
+  width: 100px;
+}
+.right_hr .center_hr6 {
+  width: 130px;
+}
+
+@media (min-width: 992px) {
+  .section.full {
+    flex-basis: 100%;
+
+    widht: 100%;
+  }
+  .section.half {
+    flex-basis: 50%;
+  }
+}
